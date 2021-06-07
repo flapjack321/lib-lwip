@@ -50,25 +50,26 @@
  */
 #define	IP_MAXPACKET	65535		/* maximum packet size */
 
-/*
- * Definitions for IP type of service (ip_tos).
- */
-#define	IPTOS_LOWDELAY		0x10
-#define	IPTOS_THROUGHPUT	0x08
-#define	IPTOS_RELIABILITY	0x04
-#define	IPTOS_MINCOST		0x02
-
-/*
- * Definitions for IP precedence (also in ip_tos) (deprecated).
- */
-#define	IPTOS_PREC_NETCONTROL		IPTOS_DSCP_CS7
-#define	IPTOS_PREC_INTERNETCONTROL	IPTOS_DSCP_CS6
-#define	IPTOS_PREC_CRITIC_ECP		IPTOS_DSCP_CS5
-#define	IPTOS_PREC_FLASHOVERRIDE	IPTOS_DSCP_CS4
-#define	IPTOS_PREC_FLASH		IPTOS_DSCP_CS3
-#define	IPTOS_PREC_IMMEDIATE		IPTOS_DSCP_CS2
-#define	IPTOS_PREC_PRIORITY		IPTOS_DSCP_CS1
-#define	IPTOS_PREC_ROUTINE		IPTOS_DSCP_CS0
+// Defined in lwip/src/include/lwip/sockets.h
+// /*
+//  * Definitions for IP type of service (ip_tos).
+//  */
+// #define	IPTOS_LOWDELAY		0x10
+// #define	IPTOS_THROUGHPUT	0x08
+// #define	IPTOS_RELIABILITY	0x04
+// #define	IPTOS_MINCOST		0x02
+//
+// /*
+//  * Definitions for IP precedence (also in ip_tos) (deprecated).
+//  */
+// #define	IPTOS_PREC_NETCONTROL		IPTOS_DSCP_CS7
+// #define	IPTOS_PREC_INTERNETCONTROL	IPTOS_DSCP_CS6
+// #define	IPTOS_PREC_CRITIC_ECP		IPTOS_DSCP_CS5
+// #define	IPTOS_PREC_FLASHOVERRIDE	IPTOS_DSCP_CS4
+// #define	IPTOS_PREC_FLASH		IPTOS_DSCP_CS3
+// #define	IPTOS_PREC_IMMEDIATE		IPTOS_DSCP_CS2
+// #define	IPTOS_PREC_PRIORITY		IPTOS_DSCP_CS1
+// #define	IPTOS_PREC_ROUTINE		IPTOS_DSCP_CS0
 
 /*
  * Offset of Diffserv decimal value to convert it to tos value .
