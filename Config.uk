@@ -121,6 +121,10 @@ config LWIP_UDP
 	bool "UDP support"
 	default y
 
+config LWIP_SO_RCVBUF
+	bool "SO_RCVBUF flag support"
+	default n
+
 menuconfig LWIP_TCP
 	bool "TCP support"
 	default y
